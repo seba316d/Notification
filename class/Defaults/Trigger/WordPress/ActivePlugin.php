@@ -16,7 +16,6 @@ class ActivePlugin extends Abstracts\Trigger{
 		$this->add_action( 'activated_plugin', 10, 2 );
 		$this->set_group( __( 'WordPress', 'notification' ) );
 		$this->set_description( __( 'Fires when plugin can be active', 'notification' ) );
-
 	}
 
 	public function action($plugin, $network_activation)
